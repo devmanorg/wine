@@ -220,7 +220,10 @@ h1, h2, h3, h4, h5,
 /* Navbar */
 .site-logo {
   font-size: 2rem;
-  color: #000; }
+  color: #000;
+  width: 203px;
+  height: 71px;
+}
 
 .site-navbar {
   margin-bottom: 0px;
