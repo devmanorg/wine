@@ -1,13 +1,6 @@
- AOS.init({
- 	duration: 800,
- 	easing: 'slide',
- 	once: true
- });
-
 jQuery(document).ready(function($) {
 
 	"use strict";
-
 
   // loader
   var loader = function() {
@@ -99,24 +92,6 @@ jQuery(document).ready(function($) {
 		});
 	}; 
 	siteMenuClone();
-
-
-	var sitePlusMinus = function() {
-		$('.js-btn-minus').on('click', function(e){
-			e.preventDefault();
-			if ( $(this).closest('.input-group').find('.form-control').val() != 0  ) {
-				$(this).closest('.input-group').find('.form-control').val(parseInt($(this).closest('.input-group').find('.form-control').val()) - 1);
-			} else {
-				$(this).closest('.input-group').find('.form-control').val(parseInt(0));
-			}
-		});
-		$('.js-btn-plus').on('click', function(e){
-			e.preventDefault();
-			$(this).closest('.input-group').find('.form-control').val(parseInt($(this).closest('.input-group').find('.form-control').val()) + 1);
-		});
-	};
-	sitePlusMinus();
-
 
 	var siteSliderRange = function() {
     $( "#slider-range" ).slider({
@@ -266,29 +241,6 @@ jQuery(document).ready(function($) {
 	  });
 	};
 	siteStellar();
-
-	var siteCountDown = function() {
-
-		$('#date-countdown').countdown('2020/10/10', function(event) {
-		  var $this = $(this).html(event.strftime(''
-		    + '<span class="countdown-block"><span class="label">%w</span> weeks </span>'
-		    + '<span class="countdown-block"><span class="label">%d</span> days </span>'
-		    + '<span class="countdown-block"><span class="label">%H</span> hr </span>'
-		    + '<span class="countdown-block"><span class="label">%M</span> min </span>'
-		    + '<span class="countdown-block"><span class="label">%S</span> sec</span>'));
-		});
-				
-	};
-	siteCountDown();
-
-	var siteDatePicker = function() {
-
-		if ( $('.datepicker').length > 0 ) {
-			$('.datepicker').datepicker();
-		}
-
-	};
-	siteDatePicker();
 
 	var siteSticky = function() {
 		$(".js-sticky-header").sticky({topSpacing:0});
