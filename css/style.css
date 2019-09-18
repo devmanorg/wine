@@ -538,8 +538,8 @@ h1, h2, h3, h4, h5,
   position: relative;
   background-position: center center; }
   .intro-section.container .row {
-    height: 100vh;
-    min-height: 700px; }
+    height: 70vh;
+    min-height: 450px; }
   .intro-section:before {
     content: "";
     position: absolute;
