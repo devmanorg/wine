@@ -1,6 +1,4 @@
 from jinja2 import Environment, FileSystemLoader, select_autoescape
-import json
-import itertools
 from http.server import HTTPServer, SimpleHTTPRequestHandler
 
 
