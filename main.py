@@ -5,9 +5,6 @@ from jinja2 import Environment, FileSystemLoader, select_autoescape
 import pandas
 from collections import defaultdict
 
-excel_data_df = pandas.read_excel("wine.xlsx")
-
-
 path = os.path.abspath(os.path.dirname(__file__))
 os.chdir(path)
 
